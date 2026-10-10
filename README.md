@@ -4,7 +4,7 @@ A small `createAnimate()` adapter over the public `animate` export from `motion/
 
 ## Use in an existing Ripple project
 
-After the first JSR publication, install the package in an existing Ripple project:
+Install the package in an existing Ripple project:
 
 ```sh
 npx jsr add @8ft/ripple-motion
@@ -63,7 +63,7 @@ The measured minified bundle is **8,902 bytes**, or **3,563 bytes gzip**, includ
 
 ## Publishing
 
-The SSH remote is `git@github.com:8ftdev/ripple-motion.git`. The package is `@8ft/ripple-motion`, version `0.1.0`, under the MIT license.
+The SSH remote is `git@github.com:8ftdev/ripple-motion.git`. The package is `@8ft/ripple-motion`, version `0.1.1`, under the MIT license.
 
 Before the first publish, create the package on JSR if necessary and link its GitHub repository to `8ftdev/ripple-motion` in the package settings. The publishing actor must satisfy the JSR scope publishing settings. See [JSR GitHub Actions publishing](https://jsr.io/docs/publishing-packages#publishing-from-github-actions).
 

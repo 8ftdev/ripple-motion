@@ -1,6 +1,6 @@
 {
   "name": "@8ft/ripple-motion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scoped Motion mini animations for Ripple.",
   "type": "module",
   "license": "MIT",

@@ -9,7 +9,7 @@
     "includesReact": false
   },
   "date": "2026-10-10",
-  "sourceSha256": "078a8534769c7a65c2b8ca8421b8e4579d6a85a99ef25c68becd3537afb755f4",
+  "sourceSha256": "da5642c4d2a826db37ee1aa694a5da83d3a57a6f8fe4cb9c42ef95f47d9b9ec2",
   "typescript": "passed, strict mode",
   "ssrTests": {
     "passed": 3,
@@ -51,13 +51,21 @@
   "latestBrowserRun": "2026-10-10T21:43:09.548Z",
   "jsr": {
     "name": "@8ft/ripple-motion",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "exports": "./mod.ts",
     "dryRun": "passed",
-    "isolatedCheckoutDryRun": "passed after npm ci --ignore-scripts in a checkout outside the workspace; missing Motion reproduced before installation",
+    "isolatedCheckoutDryRun": "0.1.0 passed after npm ci --ignore-scripts in a checkout outside the workspace; missing Motion reproduced before installation",
     "publicEntrySsrImport": "passed without DOM globals",
-    "sourceMatchesBrowserTestedHelper": true,
-    "packagingReview": "No blockers; documentation comparison corrected after checking Motion 14.1.0 source."
-  }
+    "packagingReview": "No blockers; public symbol documentation reviewed against Motion 14.1.0 and the adapter implementation.",
+    "implementationMatchesBrowserTestedHelper": true,
+    "documentation": {
+      "documentedExportedSymbols": 7,
+      "exportedSymbols": 7,
+      "percentage": 100,
+      "interfaceMembersDocumented": true,
+      "lint": "passed"
+    }
+  },
+  "browserTestedSourceSha256": "078a8534769c7a65c2b8ca8421b8e4579d6a85a99ef25c68becd3537afb755f4"
 }
