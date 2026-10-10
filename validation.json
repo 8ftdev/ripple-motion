@@ -55,6 +55,7 @@
     "license": "MIT",
     "exports": "./mod.ts",
     "dryRun": "passed",
+    "isolatedCheckoutDryRun": "passed after npm ci --ignore-scripts in a checkout outside the workspace; missing Motion reproduced before installation",
     "publicEntrySsrImport": "passed without DOM globals",
     "sourceMatchesBrowserTestedHelper": true,
     "packagingReview": "No blockers; documentation comparison corrected after checking Motion 14.1.0 source."

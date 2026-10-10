@@ -67,6 +67,6 @@ The SSH remote is `git@github.com:8ftdev/ripple-motion.git`. The package is `@8f
 
 Before the first publish, create the package on JSR if necessary and link its GitHub repository to `8ftdev/ripple-motion` in the package settings. The publishing actor must satisfy the JSR scope publishing settings. See [JSR GitHub Actions publishing](https://jsr.io/docs/publishing-packages#publishing-from-github-actions).
 
-The `Publish` workflow runs `npx jsr publish` on pushes to `main`, using GitHub OIDC (`id-token: write`) with no registry token secret. Update `jsr.json` before each new release; an already-published version is skipped by the CLI.
+The `Publish` workflow installs the locked dependencies with `npm ci --ignore-scripts`, then runs `npx jsr publish` on pushes to `main`, using GitHub OIDC (`id-token: write`) with no registry token secret. Installing dependencies is required because the JSR CLI resolves `motion/mini` through `node_modules`. Update `jsr.json` before each new release; an already-published version is skipped by the CLI.
 
-For a local check, run `npm install`, `npm run check`, and `npm run publish:check`. The last command validates the package without publishing a version.
+For a local check, run `npm ci --ignore-scripts`, `npm run check`, and `npm run publish:check`. The last command validates the package without publishing a version.
