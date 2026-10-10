@@ -1,0 +1,62 @@
+{
+  "rippleCommit": "be48601f488acd0644cc06ba3e7d7a37e88c5b17",
+  "motionVersion": "14.1.0",
+  "bundle": {
+    "minifiedBytes": 8902,
+    "gzipBytes": 3563,
+    "engineGzipBytes": 3347,
+    "gzipOverheadBytes": 216,
+    "includesReact": false
+  },
+  "date": "2026-10-10",
+  "sourceSha256": "078a8534769c7a65c2b8ca8421b8e4579d6a85a99ef25c68becd3537afb755f4",
+  "typescript": "passed, strict mode",
+  "ssrTests": {
+    "passed": 3,
+    "failed": 0
+  },
+  "browserTests": {
+    "passed": 39,
+    "failed": 0,
+    "browsers": [
+      "Chromium",
+      "Firefox",
+      "WebKit"
+    ],
+    "passedPerBrowser": 13,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "firefox": {
+    "verified": true,
+    "browserVersion": "155.0",
+    "platform": "macOS 27.0.1",
+    "workaround": "MOZ_APP_DATA points to an isolated .test/firefox-app-data directory for Firefox test launches on macOS.",
+    "reference": "https://bugzilla.mozilla.org/show_bug.cgi?id=2060476#c7"
+  },
+  "coverage": [
+    "Scope callback and current element",
+    "Descendant selector scoping and explicit element targets",
+    "Motion timing and playback controls",
+    "Awaitable completion and replay cleanup",
+    "Idempotent cleanup and stale ref cleanup after remount",
+    "Preservation of unrelated native animations",
+    "Hidden-element cleanup with multiple animated properties",
+    "Ripple mount effects and automatic unmount cleanup",
+    "SSR rendering and hydration adopting existing DOM",
+    "Example mount animation and reduced motion"
+  ],
+  "independentReview": "No remaining actionable findings after cleanup fixes.",
+  "measurement": "esbuild 0.28.2, bundled/minified ESM, ES2022 target, Node gzipSync default settings; engine baseline exports animate from motion/mini.",
+  "latestBrowserRun": "2026-10-10T21:43:09.548Z",
+  "jsr": {
+    "name": "@8ft/ripple-motion",
+    "version": "0.1.0",
+    "license": "MIT",
+    "exports": "./mod.ts",
+    "dryRun": "passed",
+    "publicEntrySsrImport": "passed without DOM globals",
+    "sourceMatchesBrowserTestedHelper": true,
+    "packagingReview": "No blockers; documentation comparison corrected after checking Motion 14.1.0 source."
+  }
+}

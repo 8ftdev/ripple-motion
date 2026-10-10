@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/.test/
+/test-results/
+/playwright-report/
+/work/
+/outputs/
+*.tgz
+.DS_Store

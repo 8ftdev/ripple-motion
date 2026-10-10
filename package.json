@@ -1,0 +1,23 @@
+{
+  "name": "@8ft/ripple-motion",
+  "version": "0.1.0",
+  "description": "Scoped Motion mini animations for Ripple.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": "./mod.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/8ftdev/ripple-motion.git"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "publish:check": "npx jsr publish --dry-run"
+  },
+  "dependencies": {
+    "motion": "14.1.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}
